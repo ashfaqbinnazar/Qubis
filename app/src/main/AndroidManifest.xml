@@ -14,20 +14,13 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".PrincipleHome"
-            android:theme="@style/AppTheme" >
-
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".PricipalStudents"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".TeacherHome"
-            android:theme="@style/AppTheme" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".TeacherAttendance"
             android:theme="@style/AppTheme" />
@@ -42,14 +35,26 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".TeacherAttendance3"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TeacherClassAttendanceReport"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".TeacherNewAttendance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PrincipalStudentAttendanceReport"
             android:theme="@style/AppTheme">
-        </activity>
-        <activity android:name=".TeacherClassAttendanceReport" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".TeacherAttendance4"></activity>
     </application>
 
 </manifest>

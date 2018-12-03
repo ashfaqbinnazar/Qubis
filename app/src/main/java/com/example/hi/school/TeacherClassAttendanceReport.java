@@ -13,10 +13,7 @@ public class TeacherClassAttendanceReport extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_class_attendance_report);
 
-        TextView text = (TextView)findViewById(R.id.txtview);
 
-        RotateAnimation rotate= (RotateAnimation)AnimationUtils.loadAnimation(this,R.anim.rotateanimation);
-        text.setAnimation(rotate);
 
     }
 }
