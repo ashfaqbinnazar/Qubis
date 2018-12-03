@@ -48,13 +48,14 @@
         <activity
             android:name=".PrincipalStudentAttendanceReport"
             android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".TeacherAttendance4" android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TeacherAttendance4"></activity>
     </application>
 
 </manifest>
