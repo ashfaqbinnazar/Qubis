@@ -8,7 +8,6 @@ import android.view.animation.RotateAnimation;
 import android.widget.TextView;
 
 public class TeacherClassAttendanceReport extends Activity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

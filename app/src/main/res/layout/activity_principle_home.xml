@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/relativeLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".PrincipleHome">
+
+
+<ImageView
+    android:id="@+id/imageView4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrincipleHome">
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_bg"/>
-
-    </FrameLayout>
+    android:scaleType="centerCrop"
+    android:src="@drawable/img_bg"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -114,10 +116,11 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
                                     android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
@@ -149,13 +152,12 @@
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
                                     android:background="@color/white"
-                                    android:layout_marginLeft="20dp"
-                                    android:layout_marginRight="20dp"
                                     />
 
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:gravity="center">
@@ -192,7 +194,8 @@
                                 android:orientation="horizontal">
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:gravity="center">
@@ -223,13 +226,12 @@
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
                                     android:background="@color/white"
-                                    android:layout_marginLeft="20dp"
-                                    android:layout_marginRight="20dp"
                                     />
 
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:gravity="center">
@@ -267,7 +269,8 @@
                                 android:orientation="horizontal">
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:gravity="center">
@@ -298,13 +301,12 @@
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
                                     android:background="@color/white"
-                                    android:layout_marginLeft="20dp"
-                                    android:layout_marginRight="20dp"
                                     />
 
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:gravity="center">
@@ -341,7 +343,8 @@
                                 android:orientation="horizontal">
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:gravity="center">
@@ -356,7 +359,7 @@
                                         android:gravity="center"
                                         android:text="hostal"
                                         android:textStyle="bold"
-                                        android:paddingBottom="20dp"
+                                        android:paddingBottom="5dp"
                                         />
 
 
@@ -372,13 +375,12 @@
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
                                     android:background="@color/white"
-                                    android:layout_marginLeft="20dp"
-                                    android:layout_marginRight="20dp"
                                     />
 
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:gravity="center">
@@ -393,7 +395,7 @@
                                         android:gravity="center"
                                         android:text="intimation"
                                         android:textStyle="bold"
-                                        android:paddingBottom="20dp"
+                                        android:paddingBottom="5dp"
                                         />
 
                                     <View
@@ -416,7 +418,8 @@
                                 android:orientation="horizontal">
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:gravity="center">
@@ -442,13 +445,12 @@
                                     android:layout_width="1dp"
                                     android:layout_height="match_parent"
                                     android:background="@color/white"
-                                    android:layout_marginLeft="20dp"
-                                    android:layout_marginRight="20dp"
                                     />
 
 
                                 <LinearLayout
-                                    android:layout_width="130dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:gravity="center">
@@ -518,5 +520,4 @@
 
     </ScrollView>
 
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

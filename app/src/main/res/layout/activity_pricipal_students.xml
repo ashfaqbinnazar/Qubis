@@ -1,227 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/relativeLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".PricipalStudents">
+
+
+<ImageView
+    android:id="@+id/imageView4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PricipalStudents">
-    <FrameLayout
+    android:scaleType="centerCrop"
+    android:src="@drawable/img_bg"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_bg"/>
-
-    </FrameLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/Header"
+            android:layout_height="wrap_content">
 
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_margin="20dp"
-                android:id="@+id/Header"
-                android:layout_height="wrap_content">
-
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/ic_nav"/>
-
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/iv_profile"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/img_principal"
-                    app:civ_border_width="2dp"
-                    app:civ_border_color="#FFF"/>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/iv_profile"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="Mathew John"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:layout_height="wrap_content"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="Principal"
-                        android:textColor="@color/white"
-                        android:layout_height="wrap_content"
-                        />
-
-                </LinearLayout>
-
-
-            </RelativeLayout>
-            <RelativeLayout
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_below="@+id/Header"
-                android:layout_centerInParent="true">
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_nav"/>
 
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_profile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img_principal"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFF"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_profile"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Mathew John"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Principal"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/Header"
+            android:layout_centerInParent="true">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_marginTop="95dp"
+                android:layout_height="wrap_content">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:gravity="center"
-
-                    android:layout_marginBottom="10dp"
-                    android:background="@color/white"
-                    android:layout_marginTop="95dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <RelativeLayout
+
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="30dp"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical">
+                            android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="match_parent"
+                                android:layout_width="130dp"
+                                android:layout_weight="1"
+                                android:layout_gravity=""
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="vertical"
+                                android:gravity="center">
 
-                                <LinearLayout
-                                    android:layout_width="130dp"
-                                    android:layout_weight="1"
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical"
-                                    android:gravity="center">
-
-
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textAllCaps="true"
-                                        android:layout_marginTop="10dp"
-                                        android:gravity="center"
-                                        android:textStyle="bold"
-                                        android:text="attendance"
-                                        android:layout_marginBottom="5dp"
-                                        />
-
-
-                                </LinearLayout>
-
-                                <View
-                                    android:layout_width="1dp"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/white"
-                                    android:layout_marginLeft="20dp"
-                                    android:layout_marginRight="20dp"
+                                    android:textAllCaps="true"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="attendance"
+                                    android:layout_marginBottom="5dp"
                                     />
 
 
-                                <LinearLayout
-                                    android:layout_width="130dp"
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                />
+
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical"
-                                    android:gravity="center">
+                                    android:textAllCaps="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="grade"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="5dp"
+                                    />
 
-
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textAllCaps="true"
-                                        android:layout_marginTop="10dp"
-                                        android:text="grade"
-                                        android:textStyle="bold"
-                                        android:gravity="center"
-                                        android:layout_marginBottom="5dp"
-                                        />
-
-
-
-                                </LinearLayout>
 
 
                             </LinearLayout>
 
 
-
                         </LinearLayout>
 
-                        <View
-                            android:layout_width="1dp"
-                            android:background="@color/greyline"
-                            android:layout_centerHorizontal="true"
-                            android:layout_height="120dp"/>
-                    </RelativeLayout>
 
 
+                    </LinearLayout>
 
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="120dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/greyline"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/img_circle"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="students"
-                        android:textAllCaps="true"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:layout_centerInParent="true"
-                        />
-
+                        android:layout_height="120dp"/>
                 </RelativeLayout>
 
 
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/img_circle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="students"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
 
         </RelativeLayout>
 
-    </ScrollView>
+
+    </RelativeLayout>
+
+</ScrollView>
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

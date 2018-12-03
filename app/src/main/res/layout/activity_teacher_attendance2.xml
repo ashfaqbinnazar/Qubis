@@ -1,308 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/relativeLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".TeacherAttendance2">
+
+
+<ImageView
+    android:id="@+id/imageView4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TeacherAttendance2">
-    <FrameLayout
+    android:scaleType="centerCrop"
+    android:src="@drawable/img_bg"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_bg"/>
-
-    </FrameLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/Header"
+            android:layout_height="wrap_content">
 
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_margin="20dp"
-                android:id="@+id/Header"
-                android:layout_height="wrap_content">
-
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/ic_nav"/>
-
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/iv_profile"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/img_teacher"
-                    app:civ_border_width="2dp"
-                    app:civ_border_color="#FFF"/>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/iv_profile"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="Anna Mary "
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:layout_height="wrap_content"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="Teacher (Class Cordinator)"
-                        android:textColor="@color/white"
-                        android:layout_height="wrap_content"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="Division"
-                        android:textColor="@color/white"
-                        android:layout_height="wrap_content"
-                        />
-
-                </LinearLayout>
-
-
-            </RelativeLayout>
-            <RelativeLayout
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_below="@+id/Header"
-                android:layout_centerInParent="true">
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_nav"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_profile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img_teacher"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFF"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_profile"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Anna Mary "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Teacher (Class Cordinator)"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Division"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/Header"
+            android:layout_centerInParent="true">
 
 
 
-                <RelativeLayout
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:layout_marginTop="95dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:gravity="center"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@color/white"
-                    android:layout_marginTop="95dp"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_card_yellow"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/bg_card_yellow"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="30dp"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="30dp"
-                                android:textStyle="bold"
-                                android:textSize="16dp"
-                                android:textColor="@color/colorPrimary"
-                                android:text="Daily Attendance"
-                                />
-
-
-                            <RelativeLayout
-                                android:layout_width="150dp"
-                                android:layout_marginTop="30dp"
-                                android:gravity="center"
-                                android:background="@drawable/bg_card"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:paddingTop="10dp"
-                                    android:paddingBottom="10dp"
-                                    android:textStyle="bold"
-                                    android:textSize="18dp"
-                                    android:textColor="@color/colorPrimary"
-                                    android:text="New"/>
-
-                            </RelativeLayout>
-
-
-                            <RelativeLayout
-                                android:layout_width="150dp"
-                                android:layout_marginTop="20dp"
-                                android:layout_marginBottom="30dp"
-                                android:gravity="center"
-                                android:background="@drawable/bg_card"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:paddingTop="10dp"
-                                    android:paddingBottom="10dp"
-                                    android:textStyle="bold"
-                                    android:textSize="18dp"
-                                    android:textColor="@color/yellow"
-                                    android:text="Previous"/>
-
-                            </RelativeLayout>
-
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/bg_card_yellow"
-                            android:layout_marginTop="30dp"
+                            android:textStyle="bold"
                             android:textSize="16dp"
-                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Daily Attendance"
+                            />
+
+
+                        <RelativeLayout
+                            android:layout_width="150dp"
+                            android:layout_marginTop="30dp"
                             android:gravity="center"
-                            android:orientation="vertical">
+                            android:background="@drawable/bg_card"
+                            android:layout_height="wrap_content">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
                                 android:textStyle="bold"
-                                android:textSize="16dp"
+                                android:textSize="18dp"
                                 android:textColor="@color/colorPrimary"
-                                android:text="Attendance Report"
-                                />
+                                android:text="New"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="150dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/bg_card"
+                            android:layout_height="wrap_content">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
                                 android:textStyle="bold"
-                                android:text="Student Attendance Report"
-                                />
+                                android:textSize="18dp"
+                                android:textColor="@color/yellow"
+                                android:text="Previous"/>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_card_yellow"
+                        android:layout_marginTop="30dp"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Attendance Report"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:text="Student Attendance Report"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:hint="Name of the student"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:background="@drawable/bg_card"
+                                android:layout_height="wrap_content" />
+
+
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_margin="10dp">
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
 
                                 <EditText
-                                    android:layout_width="match_parent"
-                                    android:hint="Name of the student"
-                                    android:gravity="center"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:hint="Class/Course"
                                     android:padding="5dp"
-                                    android:background="@drawable/bg_card"
-                                    android:layout_height="wrap_content" />
-
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp"
-                                    android:orientation="horizontal">
-
-                                    <EditText
-                                        android:layout_width="0dp"
-                                        android:layout_weight="1"
-                                        android:hint="Class/Course"
-                                        android:padding="5dp"
-                                        android:gravity="center"
-                                        android:background="@drawable/bg_card"
-                                        android:layout_height="wrap_content" />
-
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        android:text="OR"/>
-
-
-                                    <EditText
-                                        android:layout_width="0dp"
-                                        android:layout_weight="1"
-                                        android:hint="Registration No"
-                                        android:gravity="center"
-                                        android:padding="5dp"
-                                        android:background="@drawable/bg_card"
-                                        android:layout_height="wrap_content" />
-
-                                </LinearLayout>
-
-                                <EditText
-                                    android:layout_width="140dp"
-                                    android:hint="Division/Year"
                                     android:gravity="center"
-                                    android:padding="5dp"
                                     android:background="@drawable/bg_card"
                                     android:layout_height="wrap_content" />
 
 
                                 <TextView
-                                    android:layout_width="50dp"
-                                    android:layout_height="30dp"
-                                    android:layout_marginTop="20dp"
-                                    android:layout_gravity="center"
-                                    android:textStyle="bold"
-                                    android:textColor="@color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="OR"/>
+
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:hint="Registration No"
                                     android:gravity="center"
-                                    android:background="@drawable/bg_card_yellow_dark"
-                                    android:text="GO"/>
+                                    android:padding="5dp"
+                                    android:background="@drawable/bg_card"
+                                    android:layout_height="wrap_content" />
 
                             </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:textStyle="bold"
-                                android:textSize="16dp"
-                                android:text="Class Attendance Report"
-                                />
-
-
                             <EditText
-                                android:layout_width="120dp"
-                                android:hint="Class/Course"
-                                android:padding="5dp"
-                                android:gravity="center"
-                                android:background="@drawable/bg_card"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:layout_height="wrap_content" />
-
-
-                            <EditText
-                                android:layout_width="wrap_content"
+                                android:layout_width="140dp"
                                 android:hint="Division/Year"
                                 android:gravity="center"
                                 android:padding="5dp"
@@ -318,52 +277,95 @@
                                 android:textStyle="bold"
                                 android:textColor="@color/white"
                                 android:gravity="center"
-                                android:layout_marginBottom="20dp"
                                 android:background="@drawable/bg_card_yellow_dark"
                                 android:text="GO"/>
 
                         </LinearLayout>
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:text="Class Attendance Report"
+                            />
 
+
+                        <EditText
+                            android:layout_width="120dp"
+                            android:hint="Class/Course"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/bg_card"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content" />
+
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:hint="Division/Year"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:background="@drawable/bg_card"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/bg_card_yellow_dark"
+                            android:text="GO"/>
 
                     </LinearLayout>
 
 
 
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="120dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/img_circle"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Attendance"
-                        android:textAllCaps="true"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="14dp"
-                        android:textStyle="bold"
-                        android:layout_centerInParent="true"
-                        />
-
-                </RelativeLayout>
+                </LinearLayout>
 
 
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/img_circle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
 
         </RelativeLayout>
 
-    </ScrollView>
+
+    </RelativeLayout>
+
+</ScrollView>
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
